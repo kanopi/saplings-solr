@@ -3,6 +3,7 @@ description: 'Enables and configures essential modules and base search view with
 type: 'Site config'
 
 install:
+  - search
   - search_api
   - facets
   - search_api_solr
