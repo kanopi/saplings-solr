@@ -353,7 +353,7 @@ display:
           submit_button: Search
           reset_button: false
           reset_button_label: Reset
-          exposed_sorts_label: 'Sort by'
+          exposed_sorts_label: 'Date Published'
           expose_sort_order: true
           sort_asc_label: Asc
           sort_desc_label: Desc
@@ -396,7 +396,7 @@ display:
                 advanced:
                   sort_options: false
                   rewrite:
-                    filter_rewrite_values: '- Any -|Sort by Type'
+                    filter_rewrite_values: '- Any -|Type'
                     filter_rewrite_values_key: false
                   collapsible: false
                   collapsible_disable_automatic_open: false
@@ -491,7 +491,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: 'Content type'
+            label: Type
             description: ''
             use_operator: false
             operator: type_op
@@ -617,6 +617,7 @@ display:
     display_plugin: page
     position: 1
     display_options:
+      enabled: true
       empty:
         area:
           id: area
