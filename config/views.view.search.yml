@@ -532,7 +532,6 @@ display:
         options:
           view_modes:
             'entity:node':
-              sa_event: teaser
               sa_page: teaser
               sa_post: teaser
       query:
