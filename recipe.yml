@@ -17,3 +17,4 @@ config:
   import:
     search_api: '*'
     search_api_solr: '*'
+    search_api_pantheon: '*'
