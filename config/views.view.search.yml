@@ -374,7 +374,7 @@ display:
               plugin_id: default
               advanced:
                 combine: true
-                combine_rewrite: "Authored on Desc|Newest\r\nAuthored on Asc|Oldest"
+                combine_rewrite: "Published on Desc|Newest\r\nPublished on Asc|Oldest"
                 reset: false
                 reset_label: ''
                 collapsible: false
@@ -409,18 +409,18 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        published_at:
+          id: published_at
           table: search_api_index_search
-          field: created
+          field: published_at
           relationship: none
           group_type: group
           admin_label: ''
           plugin_id: search_api
           order: DESC
           expose:
-            label: 'Authored on'
-            field_identifier: created
+            label: 'Published on'
+            field_identifier: published_at
           exposed: true
       arguments: {  }
       filters:
@@ -472,10 +472,7 @@ display:
           parse_mode: fuzzy_terms
           min_length: null
           fields:
-            - aggregated_field
-            - auto_aggregated_fulltext_field
             - sa_body
-            - sa_components
             - title
         type:
           id: type
@@ -491,7 +488,7 @@ display:
           exposed: true
           expose:
             operator_id: type_op
-            label: Type
+            label: 'Content type'
             description: ''
             use_operator: false
             operator: type_op
@@ -594,7 +591,7 @@ display:
         empty: false
         header: false
       header: {  }
-      exposed_block: true
+      exposed_block: false
       display_extenders: {  }
     cache_metadata:
       max-age: -1
@@ -649,7 +646,6 @@ display:
         - 'url.query_args:sort_order'
         - 'user.node_grants:view'
       tags:
-        - 'config:facets.facet.content_type'
         - 'config:field.storage.node.sa_body'
         - 'config:search_api.index.search'
         - 'search_api_list:search'
