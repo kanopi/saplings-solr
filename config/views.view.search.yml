@@ -420,7 +420,7 @@ display:
           order: DESC
           expose:
             label: 'Published on'
-            field_identifier: published_at
+            field_identifier: date
           exposed: true
       arguments: {  }
       filters:
@@ -444,7 +444,7 @@ display:
             operator: search_api_fulltext_op
             operator_limit_selection: false
             operator_list: {  }
-            identifier: search_api_fulltext
+            identifier: keywords
             required: false
             remember: false
             multiple: false
@@ -473,7 +473,6 @@ display:
           min_length: null
           fields:
             - sa_body
-            - title
         type:
           id: type
           table: search_api_index_search
@@ -539,7 +538,7 @@ display:
           preserve_facet_query_args: false
           query_tags: {  }
       relationships: {  }
-      css_class: 'row row-cols-12 row-cols-md-6 row-cols-lg-4'
+      css_class: 'row row-cols-12 row-cols-md-2 row-cols-lg-4'
       header:
         result:
           id: result
