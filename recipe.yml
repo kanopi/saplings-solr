@@ -17,4 +17,6 @@ config:
   import:
     search_api: '*'
     search_api_solr: '*'
-    search_api_pantheon: '*'
+    # Don't import optional config.
+    search_api_pantheon:
+      - search_api.server.pantheon_solr8
