@@ -8,9 +8,9 @@ dependencies:
     - configurable_views_filter_block
     - system
   theme:
-    - saplings_child
+    - arbor
 id: saplings_child_exposedformsearchpage_1
-theme: saplings_child
+theme: arbor
 region: pre_content
 weight: -8
 provider: null
