@@ -6,9 +6,9 @@ dependencies:
   module:
     - configurable_views_filter_block
   theme:
-    - saplings_child
+    - arbor
 id: search_block
-theme: saplings_child
+theme: arbor
 region: navigation_collapsible
 weight: 0
 provider: null
